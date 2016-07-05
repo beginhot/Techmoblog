@@ -1,0 +1,20 @@
+body{
+    max-width: 1349px;
+    margin: auto;
+}
+
+ul.nav.navbar-nav>li>img{
+    margin-top: 5px;
+}
+
+ul.nav-custom>li>a{
+    padding: 5px !important;
+}
+
+ul.path-menu-bar{
+    padding:0px;
+}
+ul.path-menu-bar>li{
+    float: left;
+    list-style-type: none;
+}
