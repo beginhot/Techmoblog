@@ -95,7 +95,7 @@ ul.features>li{
     color: #FFFFFF;
     font-size: 12px;
     border-radius:3px;
-    padding: 3px;
+    padding: 3px 8px 3px 8px;
     margin-left: 10px;
 }
 
@@ -112,4 +112,28 @@ ul.features>li{
     font-weight: bolder;
     color: #FFFFFF;
     padding-top: 30px;
+}
+
+.font-11{
+    font-size: 11px;
+    font-weight: bolder;
+}
+
+.font-12{
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+
+table.price_store{
+    margin-top: 10px;
+    width: 100%;
+
+}
+table.price_store>tbody>tr{
+    border-top:1px solid #f5f6f7;
+}
+table.price_store>tbody>tr>td{
+    padding: 10px;
+    font-size: 10px;
 }
