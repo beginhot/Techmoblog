@@ -137,3 +137,65 @@ table.price_store>tbody>tr>td{
     padding: 10px;
     font-size: 10px;
 }
+
+
+.nav-side-menu {
+    overflow: auto;
+    background-color: #eff2f9;
+}
+
+.nav-side-menu ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+    /*
+      .collapsed{
+         .arrow:before{
+                   font-family: FontAwesome;
+                   content: "\f053";
+                   display: inline-block;
+                   padding-left:10px;
+                   padding-right: 10px;
+                   vertical-align: middle;
+                   float:right;
+              }
+       }
+  */
+}
+
+.nav-side-menu li {
+    padding: 10px;
+    cursor: pointer;
+    text-align: center;
+    border-bottom: 1px solid lightgray;
+}
+
+
+.side-content{
+    background-color: #FFFFFF;
+    width:100%;
+    text-align: center;
+}
+
+.side-content-img{
+    padding: 10px;
+}
+.side-content-body{
+    padding: 10px;
+    text-align: left;
+}
+
+.btn-close-menu-list{
+    display: none;
+}
+
+.btn-open-menu-list{
+    display: block;
+}
+
+.nav-side-menu li.collapsed>table>tbody>tr>td>img.btn-open-menu-list{
+    display: none;
+}
+.nav-side-menu li.collapsed>table>tbody>tr>td>img.btn-close-menu-list{
+    display: block;
+}
