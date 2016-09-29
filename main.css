@@ -1,6 +1,7 @@
 body{
-    max-width: 1349px;
+    /*max-width: 1349px;*/
     margin: auto;
+    background: #eee;
 }
 
 ul.nav.navbar-nav>li>img{
@@ -59,20 +60,24 @@ ul.features>li{
 
 .box-spec{
     width:98px;
-    height: 100px;
+    height: 90px;
     text-align: center;
     float: left;
     margin: 1px;
-    background-color: #f4f4f4;
+    background-repeat: no-repeat;
+    /*background-color: #f4f4f4;*/
     padding-top: 2px;
+
 }
 
 .font-title-box-spec{
-    font-size: 22px;
+    font-size: 24px;
     font-weight: bolder;
+    margin-top: 32px;
 }
 .font-box-spec{
-    font-size: 14px;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 #gradient {
@@ -198,4 +203,35 @@ table.price_store>tbody>tr>td{
 }
 .nav-side-menu li.collapsed>table>tbody>tr>td>img.btn-close-menu-list{
     display: block;
+}
+
+.tab-footer{
+  background: #1e1e1e;
+  width: 100%;
+  color:#FFFFFF;
+  padding: 10px;
+  font-size: 10px;
+}
+
+.spec-title{
+  width:90px;
+  float:left;
+  font-weight: bolder;
+  color: #26add8;
+  padding: 2px;
+}
+
+.spec-module{
+  width:100px;
+  float:left;
+  font-weight: bolder;
+  color:#545655;
+  padding: 2px;
+}
+.spec-detial{
+  float:left;
+  color:#545655;
+  padding: 2px;
+  min-width: 100px;
+
 }

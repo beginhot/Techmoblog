@@ -1,0 +1,102 @@
+body{
+	background-color: #282828;
+}
+.main_body{
+	max-width: 1349px;
+	margin: auto;
+	background-color: #ffffff;
+}
+
+.div_panel_index{
+	max-width:1200px !important; 
+	width:100% !important;
+	margin:auto !important;
+}
+
+.top_brand{
+	width: 100%;
+	min-height: 77px;
+	background-color: #1e1e1e;
+}
+
+
+.div_search_ground{
+	border:1px solid;
+	padding:5px;
+	border-radius:7px;
+	background-color:#1e1e1e;
+}
+.div_icon_search{
+	float:left;
+	cursor: pointer;
+}
+
+.div_search_ground>input{
+	background-color:#1e1e1e;
+	border:none;
+	color:#ffffff;
+}
+
+.nav>li>a{
+	padding: 10px 0px 10px 0px;
+	margin-right: 14px;
+
+}
+
+.nav_top_menu{
+	width: 100%;
+	min-height: 39px;
+	background-color: #000000;
+}
+
+.div_hot_tags{
+	padding-top:5px;
+	margin-left:10px;
+	float:left;
+}
+
+/*============ Css News Update ======================*/
+.box_update_news{
+	max-width:400px;
+	max-height:390px;
+	margin:auto;
+}
+
+.title_update_news{
+	font-width:500;
+	font-size:18px;
+	line-height: 1.1;	
+	padding: 5px 0px 5px 0px;
+}
+.title_update_news>a{
+	color: #000000;
+}
+.text_update_news{
+	font-size:12px;
+	padding-bottom: 10px;
+	text-align: left;
+}
+/*============End Css News Update ======================*/
+
+.text_title_feed{
+	font-size: 14px;
+	font-weight: bold;
+	color: #000000;
+}
+
+.news_feed_date{
+	font-size: 11px;
+	color:#a2a2a2 ;
+}
+
+.box_all_news_upadtes{
+	width:100%;
+	border-bottom:1px solid #dddddd;
+	padding:15px 5px 15px 5px;
+	font-size: 18px;
+	font-weight: bolder;
+}
+.box_all_news_upadtes>a{
+	color: #000000;
+}
+

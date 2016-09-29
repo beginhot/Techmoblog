@@ -1,0 +1,184 @@
+body{
+	background-color: #282828;
+}
+.main_body{
+	max-width: 1266px;
+	margin: auto;
+	background-color: #ffffff;
+}
+
+.div_panel_index{
+	max-width:1026px !important; 
+	width:100% !important;
+	margin:auto !important;
+}
+
+
+.top_brand{
+	width: 100%;
+	min-height: 77px;
+	background-color: #1e1e1e;
+}
+
+.div_search_ground{
+	border:1px solid;
+	padding:5px;
+	border-radius:7px;
+	background-color:#1e1e1e;
+}
+.div_icon_search{
+	float:left;
+	cursor: pointer;
+}
+
+.div_search_ground>input{
+	background-color:#1e1e1e;
+	border:none;
+	color:#ffffff;
+}
+
+.nav>li>a{
+	padding: 10px 0px 10px 0px;
+	margin-right: 14px;
+
+}
+
+.nav_top_menu{
+	width: 100%;
+	min-height: 39px;
+	background-color: #000000;
+}
+
+.div_hot_tags{
+	padding-top:5px;
+	margin-left:10px;
+	float:left;
+}
+
+.table-news{
+	width: 100%;
+	font-size: 11px;
+	font-weight: bold;	
+}
+.table-news>tbody>tr>td{
+	padding: 5px;
+
+}
+.table-news>tbody>tr>td:nth-child(odd){
+	color: #b7b7b7;
+	vertical-align: top;
+	width:14px;
+	font-size: 8px;
+}
+
+.table-news>tbody>tr>td:nth-child(even){
+	color: #000000;	
+}
+
+.table-news>tbody>tr:nth-child(odd){
+	background-color:#ffffff ;
+}
+.table-news>tbody>tr:nth-child(even){
+	background-color:#f6f6f6 ;
+}
+/*============ Css News Update ======================*/
+.box_update_news{
+	max-width:400px;
+	max-height:390px;
+	margin:auto;
+}
+
+.title_update_review{
+	font-weight: bold;
+    font-size: 14px;
+    line-height: 1.1;
+    padding: 5px 0px 5px 0px;
+    text-align: left;
+}
+.title_update_review>a{
+	color: #000000;
+}
+.text_update_review{
+	font-size:12px;
+	padding-bottom: 10px;
+	text-align: left;
+	max-height: : 115px;
+}
+
+.title_update_news{
+	font-weight: bold;
+    font-size: 14px;
+    line-height: 1.1;
+    padding: 5px 0px 5px 0px;
+    text-align: left;
+}
+.title_update_news>a{
+	color: #000000;
+}
+.text_update_news{
+	font-size:12px;
+	padding-bottom: 10px;
+	text-align: left;
+}
+
+.box-btn{
+    color: #FFFFFF;
+    font-size: 12px;
+    border-radius:3px;
+    padding: 3px 8px 3px 8px;
+    margin-left: 10px;
+}
+
+.tags_news{
+	float:left;
+	border:1px solid #ccc;
+	font-size: 11px;
+	padding:0px 10px 0px 10px;
+	height:18px;
+	margin-top:4px;
+	font-weight:bold;
+	margin-right:2px;
+}
+
+.font-11{
+    font-size: 11px;
+    font-weight: bolder;
+}
+
+.font-12{
+    font-size: 12px;
+    font-weight: bolder;
+}
+
+
+table.price_store{
+    margin-top: 10px;
+    width: 100%;
+
+}
+table.price_store>tbody>tr{
+    border-top:1px solid #f5f6f7;
+}
+table.price_store>tbody>tr>td{
+    padding: 10px;
+    font-size: 10px;
+}
+
+/*============End Css News Update ======================*/
+
+/*========== Set Layout Right =============*/
+
+.layout_right{
+	margin:auto;
+}
+
+
+
+@media (min-width: 1266px) { 
+	.layout_right{
+		max-width:310px;
+		margin:auto;
+		padding:0px;	
+			
+	}
+}
