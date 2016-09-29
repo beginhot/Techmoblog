@@ -43,100 +43,129 @@
 </script>
 
 <style>
-.sidebar {
-        
-    width: 182px;
-}
-.sidebar .sidebar-nav.navbar-collapse {
-    padding-right: 0;
-    padding-left: 0;
-}
+    .sidebar {
+            
+        width: 182px;
+    }
+    .sidebar .sidebar-nav.navbar-collapse {
+        padding-right: 0;
+        padding-left: 0;
+    }
 
-.sidebar .sidebar-search {
-    padding: 15px;
-}
+    .sidebar .sidebar-search {
+        padding: 15px;
+    }
 
-.sidebar ul li {
-    /*border-bottom: 1px solid #e7e7e7;*/
-}
+    .sidebar ul li {
+        /*border-bottom: 1px solid #e7e7e7;*/
+    }
 
-.sidebar ul li a.active {
-    background-color: #eee;
-}
+    .sidebar ul li a.active {
+        background-color: #eee;
+    }
 
-.sidebar .arrow {
-    float: right;
-}
+    .sidebar .arrow {
+        float: right;
+    }
 
-.sidebar .fa.arrow:before {
-    content: "\f104";
-}
+    .sidebar .fa.arrow:before {
+        content: "\f104";
+    }
 
-.sidebar .active>a>.fa.arrow:before {
-    content: "\f107";
-}
+    .sidebar .active>a>.fa.arrow:before {
+        content: "\f107";
+    }
 
-.sidebar .nav-second-level li,
-.sidebar .nav-third-level li {
-    border-bottom: 0!important;
-    background-color: #ffffff;
-}
+    .sidebar .nav-second-level li,
+    .sidebar .nav-third-level li {
+        border-bottom: 0!important;
+        background-color: #ffffff;
+    }
 
-.sidebar .nav-second-level ul,
-.sidebar .nav-third-level ul {
-    border-bottom: 0!important;
-    background-color: #ffffff;    
-}
+    .sidebar .nav-second-level ul,
+    .sidebar .nav-third-level ul {
+        border-bottom: 0!important;
+        background-color: #ffffff;    
+    }
 
-.sidebar .nav-second-level li a {
-    padding-left: 37px;
-    padding: 3px 25px;
-    margin-right: 0px;   
-    color: #000000;
-    font-size: 11px;
-    font-family: 'Prompt', sans-serif;
-}
+    .sidebar .nav-second-level li a {
+        padding-left: 37px;
+        padding: 3px 25px;
+        margin-right: 0px;   
+        color: #000000;
+        font-size: 11px;
+        font-family: 'Prompt', sans-serif;
+    }
 
-.sidebar .nav-third-level li a {
-    padding-left: 52px;
-    padding: 3px 25px;
-    margin-right: 0px;   
-    color: #000000;
-    font-size: 11px;
-    font-family: 'Prompt', sans-serif;
+    .sidebar .nav-third-level li a {
+        padding-left: 52px;
+        padding: 3px 25px;
+        margin-right: 0px;   
+        color: #000000;
+        font-size: 11px;
+        font-family: 'Prompt', sans-serif;
 
-}
+    }
 
-.navbar-top-links .dropdown-messages,
-.navbar-top-links .dropdown-tasks,
-.navbar-top-links .dropdown-alerts {
-    margin-left: auto;
-}
-#side-menu.nav>li {
-    margin-top: 1px;
-    background-color: #eaf7fb;
-}
+    .navbar-top-links .dropdown-messages,
+    .navbar-top-links .dropdown-tasks,
+    .navbar-top-links .dropdown-alerts {
+        margin-left: auto;
+    }
+    #side-menu.nav>li {
+        margin-top: 1px;
+        background-color: #eaf7fb;
+    }
 
-#side-menu.nav>li>a {
-    position: relative;
-    display: block;
-    padding: 10px 10px;
-    margin-right: 0px;   
-    color: #000000;
-}
+    #side-menu.nav>li>a {
+        position: relative;
+        display: block;
+        padding: 10px 10px;
+        margin-right: 0px;   
+        color: #000000;
+    }
 
-#side-menu.nav>li>a:hover {
-    text-decoration: none;
-    background-color: #eee;
-}
+    #side-menu.nav>li>a:hover {
+        text-decoration: none;
+        background-color: #eee;
+    }
 
-.table-news>tbody>tr{
-    border-bottom: 1px solid #cccccc;
-    font-family: 'Prompt', sans-serif;
-}
-.table-news>tbody>tr>td:first-child{
-    padding-left:10px; 
-}
+    .table-news>tbody>tr{
+        border-bottom: 1px solid #cccccc;
+        font-family: 'Prompt', sans-serif;
+    }
+    .table-news>tbody>tr>td:first-child{
+        padding-left:10px; 
+    }
+
+    .font-prompt{
+         font-family: 'Prompt', sans-serif;
+    }
+    .table-price-smartphone{
+        text-align: center;
+        width: 100%;
+        max-height: 100%;
+        font-size: 12px;
+    }
+    .table-price-smartphone>tbody>tr:first-child{
+        background-color:#26add8;
+    }
+    .table-price-smartphone>tbody>tr:first-child>td{
+        color:#ffffff;
+        font-weight: bold;
+    }
+    .table-price-smartphone>tbody>tr:not(:first-child)>td:not(:last-child){
+        border-right: 1px solid #cccccc;
+    }
+    .table-price-smartphone>tbody>tr:not(:first-child)>td{
+        border-bottom:  1px solid #cccccc;
+    }
+    .table-price-smartphone>tbody>tr:last-child>td{
+        border-bottom:  none;
+    }
+    .color-price{
+        color:#006fa1;
+    }    
 
 </style>
 
@@ -319,7 +348,7 @@
                             <div class="container" style="width: 100%;text-align: left;">
                                 <div style="float:left;"><img src="img/icon/icon_search_phone.png" alt=""></div>
                                 <div style="float:left;line-height: 1.2;padding-top: 5px;">
-                                    <div style="font-size: 19px;font-weight: bold;">แค๊ตตาล็อก มือถือ สมาร์ทโฟน//Catalog Smartphone//รวมทุกยี่ห้อ</div>
+                                    <div style="font-size: 19px;font-weight: bold;">ราคา มือถือ สมาร์ทโฟน//Catalog Smartphone//รวมทุกยี่ห้อ</div>
                                     <div style="font-size: 12px;">ตอนนี้คุณอยู่ที่>>หน้าแรก>>Catalog Smartphone>>รวมทุกยี่ห้อ</div>
                                 </div>
                             </div>
@@ -445,11 +474,11 @@
                         </div>
                          <!-- /.navbar-static-side -->
 
-                         <div class="container" style="width: 100%;padding:0px;margin-top: 20px;">
-                             <img src="img/pic/pic_lazada_price.png" alt="" class="img-responsive">
+                         <div class="container hidden-xs hidden-sm" style="width: 100%;padding:0px;margin-top: 20px;">
+                             <img src="img/pic/pic_lazada_price.png" alt="" class="img-responsive" >
                          </div>
 
-                         <div class="container" style="width: 100%;padding:0px;margin-top: 20px;">
+                         <div class="container hidden-xs hidden-sm" style="width: 100%;padding:0px;margin-top: 20px;">
                              <img src="img/pic/pic_ituremart_price.png" alt="" class="img-responsive">
                          </div>
            
@@ -521,187 +550,218 @@
                                 <img src="img/tab_menu/tab_banner.png" class="img-responsive" alt="">
                             </div>                     
                         </div><!-- End Tab Search And Banner -->
-
-                        <!-- Product Price By Lazada -->
+                        
+                        <!-- Smartphone Price Recommend -->
                         <div class="container" style="width:100%;padding: 0px;border: 1px solid #cccccc;margin-top: 15px;">
-                            <div style="width: 100%;background-color:#183544 ">
-                                <img src="img/tab_menu/hot_product_lazada.png" class="img-responsive" alt="">
+                            <div class="container" style="width: 100%;background-color:#cfcfcf;padding:0px;vertical-align: text-bottom;">
+                                <span style="float: left;"><img src="img/icon/icon_price_smartphone.png" class="img-responsive" alt=""></span>              
+                                <span class="font-prompt" style="font-weight: bolder;font-size: 16px;padding-left: 10px;float: left;margin-top: 10px;">ราคา มือถือ สมาร์ทโฟน รุ่นแนะนำ (Smartphone Price Recommend)</span>
                             </div>
+                       
+                                <table class="table-price-smartphone" style="">
+                                    <tr>
+                                        <td>ยี่ห้อ/รุ่น</td>
+                                        <td>Lazada</td>
+                                        <td>ราคากลาง</td>
+                                        <td>อัพเดท</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 15px;width: 250px;">
+                                           <div style="float: left;"><img src="img/pic/small_iphone6splus.png" alt=""></div>
+                                           <div style="float: left;padding-top: 20px;padding-left: 10px;font-weight: bold;">Apple iPhone 6 Plus</div>
+                                        </td>
+                                        <td>
+                                            <div class="color-price">24,990</div>
+                                            <div>(2015-11-12)</div>
+                                            <div style="margin-top: 10px;"><a href="#"><img src="img/btn/btn_detail.png" alt=""></div></a>
+                                        </td>
+                                        <td>
+                                            <div class="color-price">22,990</div>
+                                            <div>(2015-11-12)</div>
+                                        </td>
+                                        <td>
+                                            <div class="color-price">วันนี้</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 15px;width: 250px;">
+                                           <div style="float: left;"><img src="img/pic/small_iphone6splus.png" alt=""></div>
+                                           <div style="float: left;padding-top: 20px;padding-left: 10px;font-weight: bold;">Apple iPhone 6 Plus</div>
+                                        </td>
+                                        <td>
+                                            <div class="color-price">24,990</div>
+                                            <div>(2015-11-12)</div>
+                                            <div style="margin-top: 10px;"><a href="#"><img src="img/btn/btn_detail.png" alt=""></div></a>
+                                        </td>
+                                        <td>
+                                            <div class="color-price">22,990</div>
+                                            <div>(2015-11-12)</div>
+                                        </td>
+                                        <td>
+                                            <div class="color-price">วันนี้</div>
+                                        </td>
+                                    </tr>
+                                </table>                
+                        </div>
+                        <!-- End Smartphone Price Recommend -->
 
-                            <div class="container" style="width:100%;padding: 10px;">
-
-                                <div class="row" style="margin:auto;">
-                                    <div class="col-md-3">
-                                         <div style="width:176px;height: 248px;border: 1px solid #cccccc;">
-                                             <div style="text-align: center;margin:auto;">
-                                                 <div style="max-width: 125px;max-height: 115px;margin: auto;"><img src="img/pic/price_phone.png" alt="" ></div>
-                                                 <label>Apple iPhone6</label>
-                                             </div>
-                                             <div style="width:100%;background-color: #f8f7f7;padding: 5px;">
-                                                 <div style="font-size: 12px;padding: 10px;">ราคา 4,9900 บาท <span style="color:#ffffff;background-color: #ff0000;padding: 5px;font-weight: bold;">-20%</span></div>
-                                                 <div style="font-size: 16px;padding-left: 10px;color:#ff0000;font-weight: bold;">ราคา 5,800 บาท</div>
-                                                 <div style="margin-top: 10px;"><a href="#"><img src="img/btn/btn_price_lazada.png" alt=""></a></div>
-                                             </div>
-                                         </div>                                         
-                                    </div>
-                                    <div class="col-md-3">
-                                         <div style="width:176px;height: 248px;border: 1px solid #cccccc;">
-                                             <div style="text-align: center;margin:auto;">
-                                                 <div style="max-width: 125px;max-height: 115px;margin: auto;"><img src="img/pic/price_phone.png" alt="" ></div>
-                                                 <label>Apple iPhone6</label>
-                                             </div>
-                                             <div style="width:100%;background-color: #f8f7f7;padding: 5px;">
-                                                 <div style="font-size: 12px;padding: 10px;">ราคา 4,9900 บาท <span style="color:#ffffff;background-color: #ff0000;padding: 5px;font-weight: bold;">-20%</span></div>
-                                                 <div style="font-size: 16px;padding-left: 10px;color:#ff0000;font-weight: bold;">ราคา 5,800 บาท</div>
-                                                 <div style="margin-top: 10px;"><a href="#"><img src="img/btn/btn_price_lazada.png" alt=""></a></div>
-                                             </div>
-                                         </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                         <div style="width:176px;height: 248px;border: 1px solid #cccccc;">
-                                             <div style="text-align: center;margin:auto;">
-                                                 <div style="max-width: 125px;max-height: 115px;margin: auto;"><img src="img/pic/price_phone.png" alt="" ></div>
-                                                 <label>Apple iPhone6</label>
-                                             </div>
-                                             <div style="width:100%;background-color: #f8f7f7;padding: 5px;">
-                                                 <div style="font-size: 12px;padding: 10px;">ราคา 4,9900 บาท <span style="color:#ffffff;background-color: #ff0000;padding: 5px;font-weight: bold;">-20%</span></div>
-                                                 <div style="font-size: 16px;padding-left: 10px;color:#ff0000;font-weight: bold;">ราคา 5,800 บาท</div>
-                                                 <div style="margin-top: 10px;"><a href="#"><img src="img/btn/btn_price_lazada.png" alt=""></a></div>
-                                             </div>
-                                         </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                         <div style="width:176px;height: 248px;border: 1px solid #cccccc;">
-                                             <div style="text-align: center;margin:auto;">
-                                                 <div style="max-width: 125px;max-height: 115px;margin: auto;"><img src="img/pic/price_phone.png" alt="" ></div>
-                                                 <label>Apple iPhone6</label>
-                                             </div>
-                                             <div style="width:100%;background-color: #f8f7f7;padding: 5px;">
-                                                 <div style="font-size: 12px;padding: 10px;">ราคา 4,9900 บาท <span style="color:#ffffff;background-color: #ff0000;padding: 5px;font-weight: bold;">-20%</span></div>
-                                                 <div style="font-size: 16px;padding-left: 10px;color:#ff0000;font-weight: bold;">ราคา 5,800 บาท</div>
-                                                 <div style="margin-top: 10px;"><a href="#"><img src="img/btn/btn_price_lazada.png" alt=""></a></div>
-                                             </div>
-                                         </div>
-                                    </div>
-                                </div>
-                
-                               
-                                
+                         <!-- Smartphone Apple Price -->
+                        <div class="container" style="width:100%;padding: 0px;border: 1px solid #cccccc;margin-top: 15px;">
+                            <div class="container" style="width: 100%;background-color:#cfcfcf;padding:0px;vertical-align: text-bottom;">
+                                <span style="float: left;"><img src="img/icon/icon_price_apple.png" class="img-responsive" alt=""></span>              
+                                <span class="font-prompt" style="font-weight: bolder;font-size: 16px;padding-left: 10px;float: left;margin-top: 10px;">ราคา มือถือ สมาร์ทโฟน รุ่นแนะนำ (Smartphone Price Recommend)</span>
                             </div>
-                        </div><!-- End Product Price By Lazada -->
+                            <table class="table-price-smartphone" style="">
+                                    <tr>
+                                        <td>ยี่ห้อ/รุ่น</td>
+                                        <td>Lazada</td>
+                                        <td>ราคากลาง</td>
+                                        <td>อัพเดท</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 15px;width: 330px;">
+                                            <div class="row" style="max-width: 300px;margin:0px;">
+                                                <div class="col-md-5">
+                                                    <img src="img/pic/pic_iphone6plus.png" alt="">
+                                                </div>   
+                                                <div class="col-md-7" class="font-prompt" style="font-size: 11px;font-weight: bold;text-align: left;padding-top: 20px;">
+                                                    <div>iPhone 6S Plus</div>
+                                                    <div>CPU:Apple A9 Processo...</div>
+                                                    <div>GPU:ไม่ระบุ</div>
+                                                    <div>Ram:ไม่ระบุ</div>
+                                                    <div>
+                                                        <img src="img/icon/icon_ios.png" alt="">
+                                                        <img src="img/icon/icon_apple.png" alt="">
+                                                    </div>
+                                                </div>                                                
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="color-price">24,990</div>
+                                            <div>(2015-11-12)</div>
+                                            <div style="margin-top: 10px;"><a href="#"><img src="img/btn/btn_detail.png" alt=""></div></a>
+                                        </td>
+                                        <td>
+                                            <div class="color-price">22,990</div>
+                                            <div>(2015-11-12)</div>
+                                        </td>
+                                        <td>
+                                            <div class="color-price">6 วัน</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 15px;width: 330px;">
+                                            <div class="row" style="max-width: 300px;margin:0px;">
+                                                <div class="col-md-5">
+                                                    <img src="img/pic/pic_iphone6plus.png" alt="">
+                                                </div>   
+                                                <div class="col-md-7" class="font-prompt" style="font-size: 11px;font-weight: bold;text-align: left;padding-top: 20px;">
+                                                    <div>iPhone 6S Plus</div>
+                                                    <div>CPU:Apple A9 Processo...</div>
+                                                    <div>GPU:ไม่ระบุ</div>
+                                                    <div>Ram:ไม่ระบุ</div>
+                                                    <div>
+                                                        <img src="img/icon/icon_ios.png" alt="">
+                                                        <img src="img/icon/icon_apple.png" alt="">
+                                                    </div>
+                                                </div>                                                
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="color-price">24,990</div>
+                                            <div>(2015-11-12)</div>
+                                            <div style="margin-top: 10px;"><a href="#"><img src="img/btn/btn_detail.png" alt=""></div></a>
+                                        </td>
+                                        <td>
+                                            <div class="color-price">22,990</div>
+                                            <div>(2015-11-12)</div>
+                                        </td>
+                                        <td>
+                                            <div class="color-price">6 วัน</div>
+                                        </td>
+                                    </tr>
+                                </table>
+                        </div>
+                        <!-- End Smartphone Apple Price -->
 
-                        <!--  ===== Banner ===== -->
-                        <div class="container" style="width:100%;margin: 15px;">                            
-                                <img src="img/tab_menu/tab_banner_full.png" class="img-responsive" alt="">
-                        </div><!--  ===== End Banner ===== -->
-
-                        <!-- Price Catalog SmartPhone -->
-                        <div class="container" style="width:100%;padding: 0px;border: 1px solid #cccccc;">
-                            <div style="width: 100%;background-color:#26add8 ">
-                                <img src="img/tab_menu/tab_catalog.png" class="img-responsive" alt="">
+                         <!-- Smartphone Samsung Price  -->
+                        <div class="container" style="width:100%;padding: 0px;border: 1px solid #cccccc;margin-top: 15px;">
+                            <div class="container" style="width: 100%;background-color:#cfcfcf;padding:0px;vertical-align: text-bottom;">
+                                <span style="float: left;"><img src="img/icon/icon_price_samsung.png" class="img-responsive" alt=""></span>              
+                                <span class="font-prompt" style="font-weight: bolder;font-size: 16px;padding-left: 10px;float: left;margin-top: 10px;">ราคา มือถือ สมาร์ทโฟน รุ่นแนะนำ (Smartphone Price Recommend)</span>
                             </div>
-
-                            <div class="container" style="width:100%;padding: 10px;">
-
-                                <div class="row" style="margin:auto;">
-                                    <div class="col-md-3">
-                                         <div style="width:176px;min-height: 248px;border: 1px solid #cccccc;text-align: center;">
-                                             <div style="margin:auto;">
-                                                 <div><a href="#"><img src="img/pic/pic_phone_asus.png" alt=""></a></div>
-                                                 <span><img src="img/icon/android_price.png" alt=""></span>
-                                                 <span><img src="img/icon/asus_brand.png" alt=""></span>
-                                             </div>
-                                             <div style="width:100%;background-color: #f8f7f7;padding: 5px;text-align: left;line-height: 1;">
-                                                 <p style="font-weight: bold;font-size: 12px;">Samsung Galaxy J1 </p>
-                                                 <p style="font-weight: bold;font-size: 11px;">CPU: ชิปเซ็ต Snapra... </p>
-                                                 <p style="font-weight: bold;font-size: 11px;">GPU: Mali-400 GPU </p>
-                                                 <p style="font-weight: bold;font-size: 11px;">Ram: 1GB </p>
-                                                 <p style="font-weight: bold;font-size: 12px;color:#ff0000;">ราคา 23,000 </p>
-                                                 <p style="font-size: 12px;">[2016-09-27]</p>
-                                             </div>
-                                             <div style="margin-top: 10px;">
-                                                 <a href="#"><img src="img/btn/detail_spec.png" alt=""></a>
-                                             </div>
-                                             <div style="margin-top: 5px;margin-bottom: 10px;">
-                                                 <a href="#"><img src="img/btn/compare.png" alt=""></a>
-                                             </div>
-                                         </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                        <div style="width:176px;min-height: 248px;border: 1px solid #cccccc;text-align: center;">
-                                             <div style="margin:auto;">
-                                                 <div><a href="#"><img src="img/pic/pic_phone_asus.png" alt=""></a></div>
-                                                 <span><img src="img/icon/android_price.png" alt=""></span>
-                                                 <span><img src="img/icon/asus_brand.png" alt=""></span>
-                                             </div>
-                                             <div style="width:100%;background-color: #f8f7f7;padding: 5px;text-align: left;line-height: 1;">
-                                                 <p style="font-weight: bold;font-size: 12px;">Samsung Galaxy J1 </p>
-                                                 <p style="font-weight: bold;font-size: 11px;">CPU: ชิปเซ็ต Snapra... </p>
-                                                 <p style="font-weight: bold;font-size: 11px;">GPU: Mali-400 GPU </p>
-                                                 <p style="font-weight: bold;font-size: 11px;">Ram: 1GB </p>
-                                                 <p style="font-weight: bold;font-size: 12px;color:#ff0000;">ราคา 23,000 </p>
-                                                 <p style="font-size: 12px;">[2016-09-27]</p>
-                                             </div>
-                                             <div style="margin-top: 10px;">
-                                                 <a href="#"><img src="img/btn/detail_spec.png" alt=""></a>
-                                             </div>
-                                             <div style="margin-top: 5px;margin-bottom: 10px;">
-                                                 <a href="#"><img src="img/btn/compare.png" alt=""></a>
-                                             </div>
-                                         </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                         <div style="width:176px;min-height: 248px;border: 1px solid #cccccc;text-align: center;">
-                                             <div style="margin:auto;">
-                                                 <div><a href="#"><img src="img/pic/pic_phone_asus.png" alt=""></a></div>
-                                                 <span><img src="img/icon/android_price.png" alt=""></span>
-                                                 <span><img src="img/icon/asus_brand.png" alt=""></span>
-                                             </div>
-                                             <div style="width:100%;background-color: #f8f7f7;padding: 5px;text-align: left;line-height: 1;">
-                                                 <p style="font-weight: bold;font-size: 12px;">Samsung Galaxy J1 </p>
-                                                 <p style="font-weight: bold;font-size: 11px;">CPU: ชิปเซ็ต Snapra... </p>
-                                                 <p style="font-weight: bold;font-size: 11px;">GPU: Mali-400 GPU </p>
-                                                 <p style="font-weight: bold;font-size: 11px;">Ram: 1GB </p>
-                                                 <p style="font-weight: bold;font-size: 12px;color:#ff0000;">ราคา 23,000 </p>
-                                                 <p style="font-size: 12px;">[2016-09-27]</p>
-                                             </div>
-                                             <div style="margin-top: 10px;">
-                                                 <a href="#"><img src="img/btn/detail_spec.png" alt=""></a>
-                                             </div>
-                                             <div style="margin-top: 5px;margin-bottom: 10px;">
-                                                 <a href="#"><img src="img/btn/compare.png" alt=""></a>
-                                             </div>
-                                         </div>
-                                    </div>
-                                    <div class="col-md-3">
-                                         <div style="width:176px;min-height: 248px;border: 1px solid #cccccc;text-align: center;">
-                                             <div style="margin:auto;">
-                                                 <div><a href="#"><img src="img/pic/pic_phone_asus.png" alt=""></a></div>
-                                                 <span><img src="img/icon/android_price.png" alt=""></span>
-                                                 <span><img src="img/icon/asus_brand.png" alt=""></span>
-                                             </div>
-                                             <div style="width:100%;background-color: #f8f7f7;padding: 5px;text-align: left;line-height: 1;">
-                                                 <p style="font-weight: bold;font-size: 12px;">Samsung Galaxy J1 </p>
-                                                 <p style="font-weight: bold;font-size: 11px;">CPU: ชิปเซ็ต Snapra... </p>
-                                                 <p style="font-weight: bold;font-size: 11px;">GPU: Mali-400 GPU </p>
-                                                 <p style="font-weight: bold;font-size: 11px;">Ram: 1GB </p>
-                                                 <p style="font-weight: bold;font-size: 12px;color:#ff0000;">ราคา 23,000 </p>
-                                                 <p style="font-size: 12px;">[2016-09-27]</p>
-                                             </div>
-                                             <div style="margin-top: 10px;">
-                                                 <a href="#"><img src="img/btn/detail_spec.png" alt=""></a>
-                                             </div>
-                                             <div style="margin-top: 5px;margin-bottom: 10px;">
-                                                 <a href="#"><img src="img/btn/compare.png" alt=""></a>
-                                             </div>
-                                         </div>
-                                    </div>
-                                </div>
-                
-                               
-                                
-                            </div>
-                        </div><!-- End Catalog SmartPhone -->
+                            <table class="table-price-smartphone" style="">
+                                    <tr>
+                                        <td>ยี่ห้อ/รุ่น</td>
+                                        <td>Lazada</td>
+                                        <td>ราคากลาง</td>
+                                        <td>อัพเดท</td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 15px;width: 330px;">
+                                            <div class="row" style="max-width: 300px;margin:0px;">
+                                                <div class="col-md-5">
+                                                    <img src="img/pic/pic_iphone6plus.png" alt="">
+                                                </div>   
+                                                <div class="col-md-7" class="font-prompt" style="font-size: 11px;font-weight: bold;text-align: left;padding-top: 20px;">
+                                                    <div>iPhone 6S Plus</div>
+                                                    <div>CPU:Apple A9 Processo...</div>
+                                                    <div>GPU:ไม่ระบุ</div>
+                                                    <div>Ram:ไม่ระบุ</div>
+                                                    <div>
+                                                        <img src="img/icon/icon_ios.png" alt="">
+                                                        <img src="img/icon/icon_apple.png" alt="">
+                                                    </div>
+                                                </div>                                                
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="color-price">24,990</div>
+                                            <div>(2015-11-12)</div>
+                                            <div style="margin-top: 10px;"><a href="#"><img src="img/btn/btn_detail.png" alt=""></div></a>
+                                        </td>
+                                        <td>
+                                            <div class="color-price">22,990</div>
+                                            <div>(2015-11-12)</div>
+                                        </td>
+                                        <td>
+                                            <div class="color-price">6 วัน</div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding: 15px;width: 330px;">
+                                            <div class="row" style="max-width: 300px;margin:0px;">
+                                                <div class="col-md-5">
+                                                    <img src="img/pic/pic_iphone6plus.png" alt="">
+                                                </div>   
+                                                <div class="col-md-7" class="font-prompt" style="font-size: 11px;font-weight: bold;text-align: left;padding-top: 20px;">
+                                                    <div>iPhone 6S Plus</div>
+                                                    <div>CPU:Apple A9 Processo...</div>
+                                                    <div>GPU:ไม่ระบุ</div>
+                                                    <div>Ram:ไม่ระบุ</div>
+                                                    <div>
+                                                        <img src="img/icon/icon_ios.png" alt="">
+                                                        <img src="img/icon/icon_apple.png" alt="">
+                                                    </div>
+                                                </div>                                                
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="color-price">24,990</div>
+                                            <div>(2015-11-12)</div>
+                                            <div style="margin-top: 10px;"><a href="#"><img src="img/btn/btn_detail.png" alt=""></div></a>
+                                        </td>
+                                        <td>
+                                            <div class="color-price">22,990</div>
+                                            <div>(2015-11-12)</div>
+                                        </td>
+                                        <td>
+                                            <div class="color-price">6 วัน</div>
+                                        </td>
+                                    </tr>
+                                </table>
+                        </div>
+                        <!-- End Smartphone Samsung Price -->
 
                         <div style="height: 20px;margin-bottom: 30px;"></div>
 
