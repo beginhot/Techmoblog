@@ -34,7 +34,145 @@
        font-family: 'Prompt', sans-serif;
     }
 
+    .table-news>tbody>tr>td{
+    	background-color: #f6f6f6;
+    }
+
 	</style>
+
+
+                            <style>
+
+								.li-spec-iphone-active{
+									background-color: #474646;
+									width: 50%;
+									padding-left: 0px;
+									height: 32px;
+								}
+								.li-spec-iphone-active>a{
+									color:#ffffff !important;
+								}
+
+								.li-spec-iphone-active>a>div{
+									background-image: url('img/icon/icon_phone_black.png');
+									background-repeat: no-repeat;
+									width: 17px;
+									height: 26px;
+								}
+
+								.li-spec-iphone{
+									background-color: #ffffff;
+									width: 50%;
+									padding-left: 0px;
+									height: 32px;
+									border-bottom: 2px solid #474646;
+								}
+
+								.li-spec-iphone>a{
+									color:#000000 !important;
+								}
+								.li-spec-iphone>a>div{
+									background-image: url('img/icon/icon_phone_white.png');
+									background-repeat: no-repeat;
+									width: 17px;
+									height: 26px;
+								}
+
+								.container-spec{
+									background-image: url('img/background/tab_spec.png');
+	                            	background-repeat:repeat-y;
+	                            	width: 100%;
+	                            	margin-bottom: 1px;
+                            		padding:0px;
+                            		background-color: #fbfbfb;
+                            	}
+
+                            	.div-spec-detail{
+                            		float: left;
+									width: 130px;
+									margin-left: 0px;
+									font-size: 12px;
+                            	}
+
+                            	.div-spec-text{
+                            		float: right;
+                            		font-size: 11px;
+                            		font-weight: bolder;
+                            		padding: 0px;
+                            	}
+
+
+                            	@media (min-width: 375px) { 
+									.div-spec-text{	                            		
+	                            		font-size: 16px;	
+	                            		                 	
+	                            	}
+
+	                            	.div-spec-detail{
+	                            		float: left;
+										width: 150px;
+										margin-left: 5px;
+										font-size: 16px;
+                            		}
+
+                            		.li-spec-iphone-active .li-spec-iphone{
+										padding-left: 20px;
+									}
+
+                            	}
+
+                            	@media (min-width: 768px) { 
+	                            	.container-spec{
+									    padding-left: 20px;
+									    padding-top: 10px;
+									    padding-bottom: 5px;
+									    padding-right: 5px;
+	                            	}
+	                            	.div-spec-detail{										
+										width: 200px;
+										font-size: 12px;
+										margin-left: 10px;
+	                            	}
+	                            	.div-spec-text{	                            		
+	                            		font-size: 20px;	
+	                            		padding: 0px;                                       		
+	                            	}
+
+									
+								}
+
+
+
+                            </style>
+
+                            <script>
+
+
+                            	$('#li_spec_iphone7').click(function(event) {
+                            		var nav_li=$('#li_spec_iphone7').hasClass('active');
+                            			
+                            		if(!nav_li){
+                            			$("#li_spec_iphone7").removeClass("li-spec-iphone");
+                            			$("#li_spec_iphone7plus").removeClass("li-spec-iphone-active");
+
+                            			$("#li_spec_iphone7plus").addClass("li-spec-iphone");
+                            			$("#li_spec_iphone7").addClass("li-spec-iphone-active");
+                            		}
+                            	});
+
+                            	$('#li_spec_iphone7plus').click(function(event) {
+                            		var nav_li=$('#li_spec_iphone7plus').hasClass('active');
+
+                            		if(!nav_li){
+                            			$("#li_spec_iphone7").removeClass("li-spec-iphone-active");
+                            			$("#li_spec_iphone7plus").removeClass("li-spec-iphone");
+
+                            			$("#li_spec_iphone7plus").addClass("li-spec-iphone-active");
+                            			$("#li_spec_iphone7").addClass("li-spec-iphone");
+                            		}
+                            	});
+
+    </script>
 
     <!-- ============= Mian Page ================-->
     <div class="main_body">
@@ -113,12 +251,12 @@
                 </div><!--===================  =========================-->
 				
                 <!--===================  New iPhone 7 =========================-->
-				<div class="container" style="width: 100%;padding: 0px;margin-top: 20px;margin-bottom: 20px;">
+				<div class="container" style="width: 100%;padding: 0px;margin-top: 20px;">
 					<div class="col-md-6">
 	               		<div class="container" style="width: 100%;background-color: #474646;padding: 0px;margin: 0px;">
 	               			<img src="img/tab_menu/iphone7_news.png" class="img-responsive" alt="">
 	               		</div>
-	               		<div class="container" style="width: 100%;padding: 0px;padding-left: 5px;">
+	               		<div class="container" style="width: 100%;padding: 0px;padding-left: 5px;background-color: #f6f6f6;margin-bottom: 20px;">
 	               			<table class="table-news" style="max-width: 460px;">
                                 <tbody>
                                 	<tr>
@@ -145,7 +283,7 @@
                                         <td><i class="fa fa-circle" aria-hidden="true"></i></td>
                                         <td>
                                         	<div><a href="#" style="color:#565656;font-weight: normal;font-size: 14px;" class="font-prompt">iPhone 7 (ไอโฟน 7) และ iPhone 7 Plus สรุปสเปก ราคา iPhone 7 iPhone 7 Plus</a></div>
-                                        	<div  class="font-prompt container" style="border-bottom: 1px solid #eaeaea;padding-bottom: 5px;width: 100%;padding: 0px;margin-top: 5px;">
+                                        	<div  class="font-prompt container" style="padding-bottom: 5px;width: 100%;padding: 0px;margin-top: 5px;">
                                         		<span style="font-size: 8px;font-weight: normal;float: left;">Aug 30,2016 05:07 AM EDT</span>
                                         		<span style="color: #0da5d7;font-size:15px;float: right;">23.4K Share</span>
                                         	</div>
@@ -161,73 +299,131 @@
 	               		<div class="container" style="width:100%;padding:0px;margin-bottom:20px;">
                              <!-- Nav tabs -->
                             <ul class="nav nav-tabs" style="margin-bottom:0px;">
-                                <li style="background-color: #474646;width: 50%;padding-left: 20px;height: 32px;" class="active">
-                                    <a href="#spec_iphone7" data-toggle="tab" class="font-prompt" style="color:#ffffff;background: none;border: none;padding: 3px;" aria-expanded="false">
-                                    	<div style="float: left;"><img src="img/icon/icon_phone_black.png" alt=""></div>
-                                    	<div style="padding-top: 8px;padding-left: 10px;float: left;">สเปก iPhone7</div>
+                                <li class="li-spec-iphone-active active" id="li_spec_iphone7">
+                                    <a href="#spec_iphone7" data-toggle="tab" class="font-prompt" style="background: none;border: none;padding: 3px;width: 100%;height: 32px;" aria-expanded="false">
+                                    	<div style="float: left;"></div>
+                                    	<span style="padding-top: 7px;padding-left: 10px;float: left;">สเปก iPhone7</span>
                                     </a>
                                 </li>
-                                <li style="background-color: #ffffff;width: 50%;padding-left: 20px;height: 32px;border-bottom: 2px solid #474646;">
-                                    <a href="#spec_iphone7_plus" data-toggle="tab" class="font-prompt" style="color:#000000;background: none;border: none;padding: 3px;" aria-expanded="false">
-                                    	<div style="float: left;"><img src="img/icon/icon_phone_white.png" alt=""></div>
-                                    	<div style="padding-top: 8px;padding-left: 10px;float: left;">iPhone7 plus</div>
+                                <li class="li-spec-iphone" id="li_spec_iphone7plus">
+                                    <a href="#spec_iphone7_plus" data-toggle="tab" class="font-prompt" style="background: none;border: none;padding: 3px;width: 100%;height: 32px;" aria-expanded="false">
+                                    	<div style="float: left;"></div>
+                                    	<span style="padding-top: 7px;padding-left: 10px;float: left;">iPhone7 plus</span>
                                     </a>
                                 </li>
    
                             </ul>
 
+
                             <!-- Tab panes -->
                             <div class="tab-content" style="border: 1px solid #ddd;border-top: none;padding:0px;">
                                 <div class="tab-pane fade active in" id="spec_iphone7">                                    
-                                   <div class="container font-prompt" style="padding:10px 5px 0px 20px;background-image: url('img/background/tab_spec.png');background-repeat: no-repeat;width: 100%;">
-                                   		<div style="float: left;"><img src="img/icon/cpu.png" alt=""></div>
-                                   		<div style="float: left;margin-left: 70px;width: 200px;font-size: 12px;">ความจุ 4GB ระบบปฏิบัติการ Exynos 7420</div>
-                                   		<div style="float: right;font-size: 20px;font-weight: bold;">2.5GHz</div>
+                                   <div class="container font-prompt container-spec">
+                                   		<div style="float: left;width: 120px;"><img src="img/icon/cpu.png" alt="" class="img-responsive"></div>
+                                   		<div class="div-spec-detail">ความจุ 4GB ระบบปฏิบัติการ Exynos 7420</div>
+                                   		<div class="div-spec-text">2.5GHz</div>
                                    </div>
-                                   <div class="container font-prompt" style="padding:10px 5px 10px 20px;background-image: url('img/background/tab_spec.png');background-repeat: no-repeat;width: 100%;">
-                                   		<div style="float: left;"><img src="img/icon/cammera.png" alt=""></div>
-                                   		<div style="float: left;margin-left: 40px;width: 200px;font-size: 12px;">กล้อง 12 ล้านพิกเซล พร้อมถ่ายวิดิโอความละเอียด 4K</div>
-                                   		<div style="float: right;font-size: 20px;font-weight: bold;">12MP</div>
+                                   <div class="container font-prompt container-spec">
+                                   		<div style="float: left;width: 120px;"><img src="img/icon/cammera.png" alt=""></div>
+                                   		<div class="div-spec-detail">กล้อง 12 ล้านพิกเซล พร้อมถ่ายวิดิโอความละเอียด 4K</div>
+                                   		<div class="div-spec-text">12MP</div>
                                    </div>
-                                   <div class="container font-prompt" style="padding:10px 5px 7px 25px;background-image: url('img/background/tab_spec.png');background-repeat: no-repeat;width: 100%;">
-                                   		<div style="float: left;"><img src="img/icon/screen.png" alt=""></div>
-                                   		<div style="float: left;margin-left: 50px;width: 200px;font-size: 12px;">หน้าจอขนาด 5.7 นิ้ว ความละเอียด 416ppi</div>
-                                   		<div style="float: right;font-size: 20px;font-weight: bold;">5.7"</div>
+                                   <div class="container font-prompt container-spec">
+                                   		<div style="float: left;width: 120px;"><img src="img/icon/screen.png" alt=""></div>
+                                   		<div class="div-spec-detail">หน้าจอขนาด 5.7 นิ้ว ความละเอียด 416ppi</div>
+                                   		<div class="div-spec-text">5.7"</div>
                                    </div>
-                                   <div class="container font-prompt" style="padding:10px 5px 10px 25px;background-image: url('img/background/tab_spec.png');background-repeat: no-repeat;width: 100%;">
-                                   		<div style="float: left;"><img src="img/icon/ram.png" alt=""></div>
-                                   		<div style="float: left;margin-left: 70px;width: 200px;font-size: 12px;">แรม 6GB ให้ความแรงที่เร็วขึ้น</div>
-                                   		<div style="float: right;font-size: 20px;font-weight: bold;">6GB</div>
+                                   <div class="container font-prompt container-spec">
+                                   		<div style="float: left;width: 120px;"><img src="img/icon/ram.png" alt=""></div>
+                                   		<div class="div-spec-detail">แรม 6GB ให้ความแรงที่เร็วขึ้น</div>
+                                   		<div class="div-spec-text">6GB</div>
                                    </div>
-                                   <div class="container font-prompt" style="padding:10px 5px 10px 25px;background-image: url('img/background/tab_spec.png');background-repeat: no-repeat;width: 100%;">
-                                   		<div style="float: left;"><img src="img/icon/battery.png" alt=""></div>
-                                   		<div style="float: left;margin-left: 20px;width: 200px;font-size: 12px;">แบตเตอรี่ 2600 ให้ความจุยาวนาน</div>
-                                   		<div style="float: right;font-size: 20px;font-weight: bold;">2600</div>
-                                   </div>
-                                       
+                                   <div class="container font-prompt container-spec">
+                                   		<div style="float: left;width: 120px;"><img src="img/icon/battery.png" alt=""></div>
+                                   		<div class="div-spec-detail">แบตเตอรี่ 2600 ให้ความจุยาวนาน</div>
+                                   		<div class="div-spec-text">2600</div>
+                                   </div>                                       
                                 </div>
                                 <div class="tab-pane fade " id="spec_iphone7_plus">
-                                    <div class="container" style="padding:10px 5px 7px 20px;background-image: url('img/background/tab_spec.png');background-repeat: no-repeat;width: 100%;">
-                                   		<img src="img/icon/cpu.png" alt="">
+                                    <div class="container font-prompt container-spec">
+                                   		<div style="float: left;width: 120px;"><img src="img/icon/cpu.png" alt="" class="img-responsive"></div>
+                                   		<div class="div-spec-detail">ความจุ 4GB ระบบปฏิบัติการ Exynos 7420</div>
+                                   		<div class="div-spec-text">2.5GHz</div>
                                    </div>
-                                   <div class="container" style="padding:10px 5px 10px 20px;background-image: url('img/background/tab_spec.png');background-repeat: no-repeat;width: 100%;">
-                                   		<img src="img/icon/cammera.png" alt="">
+                                   <div class="container font-prompt container-spec">
+                                   		<div style="float: left;width: 120px;"><img src="img/icon/cammera.png" alt=""></div>
+                                   		<div class="div-spec-detail">กล้อง 12 ล้านพิกเซล พร้อมถ่ายวิดิโอความละเอียด 4K</div>
+                                   		<div class="div-spec-text">12MP</div>
                                    </div>
-                                   <div class="container" style="padding:10px 5px 7px 25px;background-image: url('img/background/tab_spec.png');background-repeat: no-repeat;width: 100%;">
-                                   		<img src="img/icon/screen.png" alt="">
+                                   <div class="container font-prompt container-spec">
+                                   		<div style="float: left;width: 120px;"><img src="img/icon/screen.png" alt=""></div>
+                                   		<div class="div-spec-detail">หน้าจอขนาด 5.7 นิ้ว ความละเอียด 416ppi</div>
+                                   		<div class="div-spec-text">5.7"</div>
                                    </div>
-                                   <div class="container" style="padding:10px 5px 10px 25px;background-image: url('img/background/tab_spec.png');background-repeat: no-repeat;width: 100%;">
-                                   		<img src="img/icon/ram.png" alt="">
+                                   <div class="container font-prompt container-spec">
+                                   		<div style="float: left;width: 120px;"><img src="img/icon/ram.png" alt=""></div>
+                                   		<div class="div-spec-detail">แรม 6GB ให้ความแรงที่เร็วขึ้น</div>
+                                   		<div class="div-spec-text">6GB</div>
                                    </div>
-                                   <div class="container" style="padding:10px 5px 10px 25px;background-image: url('img/background/tab_spec.png');background-repeat: no-repeat;width: 100%;">
-                                   		<img src="img/icon/battery.png" alt="">
-                                   </div>                                
+                                   <div class="container font-prompt container-spec">
+                                   		<div style="float: left;width: 120px;"><img src="img/icon/battery.png" alt=""></div>
+                                   		<div class="div-spec-detail">แบตเตอรี่ 2600 ให้ความจุยาวนาน</div>
+                                   		<div class="div-spec-text">2600</div>
+                                   </div>                               
                                 </div>
                             </div>
                         </div>
 	               		
 	               	</div>
 				</div><!--=================== End New iPhone 7 =========================-->
+
+				<div class="container" style="width:100%;padding:0px;margin:0px;">                
+                	<!--============= Content Left =================-->
+                    <div class="col-md-9" style="max-width:700px;text-align:left;margin-bottom:20px;">
+
+                    	<div class="container" style="width: 100%;padding: 0px;background-color: #cfcfcf;">
+                    		<img src="img/tab_menu/last_news_iphone7.png" alt="">
+                    	</div>
+
+                    	<div class="container" style="width: 100%;padding: 0px;">
+                    		<img src="img/pic/pic_detail_spec_iphone.png" alt="" class="img-responsive">
+                    	</div>
+
+                    </div>
+                     <!--============= Content Right =================-->
+                    <div class="col-md-4 layout_right">
+                    	<!--=========== Banner 300 ============-->
+                        <div class="container" style="width:100%;max-width:300px;margin:auto;padding:0px;">
+                            <img src="img/pic/banner300.png" alt="" >
+                        </div><!--=========== End Banner 300 ============-->
+                        <!--=========== Banner 300 ============-->
+                        <div class="container" style="width:100%;max-width:300px;margin:auto;padding:0px;">
+                            <img src="img/pic/spec_iphone7_right.png" alt="" >
+                        </div><!--=========== End Banner 300 ============-->
+
+                        <!--=========== Banner 300 ============-->
+                        <div class="container" style="width:100%;max-width:300px;margin:auto;padding:0px;">
+                            <img src="img/pic/banner300.png" alt="" >
+                        </div><!--=========== End Banner 300 ============-->
+
+                         <!--=========== Banner 300 ============-->
+                        <div class="container" style="width:100%;max-width:300px;margin:auto;padding:0px;">
+                            <img src="img/pic/price_iphone7.png" alt="" >
+                        </div><!--=========== End Banner 300 ============-->
+
+                        <!--=========== Banner 300 ============-->
+                        <div class="container" style="width:100%;max-width:300px;margin:auto;padding:0px;">
+                            <img src="img/pic/article_iphone7.png" alt="" >
+                        </div><!--=========== End Banner 300 ============-->
+
+                        <!--=========== Banner 300 ============-->
+                        <div class="container" style="width:100%;max-width:300px;margin:auto;padding:0px;">
+                            <img src="img/pic/article_etc.png" alt="" >
+                        </div><!--=========== End Banner 300 ============-->
+
+
+                    </div>
+                </div>
 
 
             </div><!--================= End Body Content ===============-->
