@@ -110,7 +110,7 @@
 			font-size: 16px;
         }
 
-        .li-spec-iphone-active .li-spec-iphone{
+        .li-spec-iphone-active,.li-spec-iphone{
 			padding-left: 20px;
 		}
 
@@ -149,6 +149,11 @@
 	    background-color:#4b5a94 ;
 	}
 
+	.fixed-position-right{
+		position: fixed;
+		top: 20px;
+	}
+
     </style>
 
     <script>
@@ -182,7 +187,14 @@
     	});
 
       
-
+	$(window).scroll(function(){
+		//console.log($(this).scrollTop() );
+      if ($(this).scrollTop() > 1500&&$(this).scrollTop() < 2100) {
+         $('#right_scroll_fix').addClass('fixed-position-right');
+      } else {
+          $('#right_scroll_fix').removeClass('fixed-position-right');
+      }
+  	});
         
 
     </script>
@@ -219,12 +231,12 @@
             </div>
             <div id="navbar" class="navbar-collapse collapse div_panel_index">
               <ul class="nav navbar-nav">
-                <li><a href="#"><img src="img/home.png" alt="" ></a></li>
-                <li><a href="#about"><img src="img/news.png" alt="" ></a></li>
-                <li><a href="#contact"><img src="img/price.png" alt="" ></a></li>
-                <li><a href="#"><img src="img/catalog.png" alt="" ></a></li>
+                <li><a href="#" style="margin-left: 7px;"><img src="img/home.png" alt="" ></a></li>
+                <li><a href="#about" style="margin-left: 2px;"><img src="img/news.png" alt="" ></a></li>
+                <li><a href="#contact" style="margin-left: 2px;"><img src="img/price.png" alt="" ></a></li>
+                <li><a href="#" style="margin-left: 7px;"><img src="img/catalog.png" alt="" ></a></li>
                 <li><a href="#about"><img src="img/review.png" alt="" ></a></li>
-                <li><a href="#contact"><img src="img/application.png" alt="" ></a></li>
+                <li><a href="#contact" style="margin-left: 2px;"><img src="img/application.png" alt="" ></a></li>
               </ul>     
               <div class="pull-right hidden-xs" style="text-align:right;padding-top:10px;">
                     <img src="img/stay_connected.png" alt="">
@@ -236,17 +248,16 @@
             </div><!--/.nav-collapse -->
           </div>
         </nav><!--============== End Static navbar ==================-->
-        
 
         <div class="container" style="width:100%;padding:0px;margin:0px;">
 
             <!--================= Banner Left ===============-->
             <div style="float:left;width:120px;" class="hidden-xs hidden-sm hidden-md">
-                <img src="img/pic/banner_left.png" alt="">
+                <!--img src="img/pic/banner_left.png" alt=""-->
             </div><!--================= End Banner Left ===============-->
 
             <!--================= Body Content ===============-->
-            <div style="float:left;" class="div_panel_index">
+            <div style="margin:auto;" class="div_panel_index">
                 <!--=============== Hot Tags =================-->
                 <div class="top_tags font-prompt" style="width:100%;background-color:#ffffff;height:48px;">
                     <div style="padding-top:5px;">
@@ -290,51 +301,9 @@
 				
                 <!--===================  New iPhone 7 =========================-->
 				<div class="container" style="width: 100%;padding: 0px;margin-top: 20px;">
-					<div class="col-md-6 hidden-xs">
-	               		<div class="container" style="width: 100%;background-color: #474646;padding: 0px;margin: 0px;">
-	               			<img src="img/tab_menu/iphone7_news.png" class="img-responsive" alt="">
-	               		</div>
-	               		<div class="container" style="width: 100%;padding: 0px;padding-left: 5px;background-color: #f6f6f6;margin-bottom: 20px;">
-	               			<table class="table-news" style="max-width: 460px;">
-                                <tbody>
-                                	<tr>
-                                        <td><i class="fa fa-circle" aria-hidden="true"></i></td>
-                                        <td>
-                                        	<div><a href="#" style="color:#565656;font-weight: normal;font-size: 14px;" class="font-prompt">iPhone 7 (ไอโฟน 7) และ iPhone 7 Plus สรุปสเปก ราคา iPhone 7 iPhone 7 Plus</a></div>
-                                        	<div  class="font-prompt container" style="border-bottom: 1px solid #eaeaea;padding-bottom: 5px;width: 100%;padding: 0px;margin-top: 5px;">
-                                        		<span style="font-size: 8px;font-weight: normal;float: left;">Aug 30,2016 05:07 AM EDT</span>
-                                        		<span style="color: #0da5d7;font-size:15px;float: right;">23.4K Share</span>
-                                        	</div>
-                                       </td>
-                                    </tr> 
-                                    <tr>
-                                        <td><i class="fa fa-circle" aria-hidden="true"></i></td>
-                                        <td>
-                                        	<div><a href="#" style="color:#565656;font-weight: normal;font-size: 14px;" class="font-prompt">iPhone 7 (ไอโฟน 7) และ iPhone 7 Plus สรุปสเปก ราคา iPhone 7 iPhone 7 Plus</a></div>
-                                        	<div  class="font-prompt container" style="border-bottom: 1px solid #eaeaea;padding-bottom: 5px;width: 100%;padding: 0px;margin-top: 5px;">
-                                        		<span style="font-size: 8px;font-weight: normal;float: left;">Aug 30,2016 05:07 AM EDT</span>
-                                        		<span style="color: #0da5d7;font-size:15px;float: right;">23.4K Share</span>
-                                        	</div>
-                                       </td>
-                                    </tr>
-                                    <tr>
-                                        <td><i class="fa fa-circle" aria-hidden="true"></i></td>
-                                        <td>
-                                        	<div><a href="#" style="color:#565656;font-weight: normal;font-size: 14px;" class="font-prompt">iPhone 7 (ไอโฟน 7) และ iPhone 7 Plus สรุปสเปก ราคา iPhone 7 iPhone 7 Plus</a></div>
-                                        	<div  class="font-prompt container" style="padding-bottom: 5px;width: 100%;padding: 0px;margin-top: 5px;">
-                                        		<span style="font-size: 8px;font-weight: normal;float: left;">Aug 30,2016 05:07 AM EDT</span>
-                                        		<span style="color: #0da5d7;font-size:15px;float: right;">23.4K Share</span>
-                                        	</div>
-                                       </td>
-                                    </tr> 
-                                                                        
-                                </tbody>
-                            </table>  
-	               		</div>
-	               	</div>
-	               	<div class="col-md-6">
+					<div class="col-md-6">
 
-	               		<div class="container" style="width:100%;padding:0px;margin-bottom:20px;">
+						<div class="container" style="width:100%;padding:0px;margin-bottom:20px;">
                              <!-- Nav tabs -->
                             <ul class="nav nav-tabs" style="margin-bottom:0px;">
                                 <li class="li-spec-iphone-active active" id="li_spec_iphone7">
@@ -412,6 +381,60 @@
                             </div>
                         </div>
 	               		
+	               	</div>
+	               	<div class="col-md-6 hidden-xs">
+
+						<div class="container" style="width: 100%;background-color: #474646;padding: 0px;margin: 0px;">
+	               			<img src="img/tab_menu/iphone7_news.png" class="img-responsive" alt="">
+	               		</div>
+	               		<div class="container" style="width: 100%;padding: 0px;padding-left: 5px;background-color: #f6f6f6;margin-bottom: 20px;">
+	               			<table class="table-news" style="max-width: 460px;">
+                                <tbody>
+                                	<tr>
+                                        <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+                                        <td style="padding-top: 7px;padding-bottom: 7px;">
+                                        	<div><a href="#" style="color:#565656;font-weight: normal;font-size: 14px;" class="font-prompt">iPhone 7 (ไอโฟน 7) และ iPhone 7 Plus สรุปสเปก ราคา iPhone 7...</a></div>
+                                        	<div  class="font-prompt container" style="border-bottom: 1px solid #eaeaea;padding-bottom: 5px;width: 100%;padding: 0px;margin-top: 5px;">
+                                        		<span style="font-size: 8px;font-weight: normal;float: left;">Aug 30,2016 05:07 AM EDT</span>
+                                        		<span style="color: #0da5d7;font-size:15px;float: right;">23.4K Share</span>
+                                        	</div>
+                                       </td>
+                                    </tr> 
+                                    <tr>
+                                        <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+                                        <td style="padding-top: 5px;padding-bottom: 5px;">
+                                        	<div><a href="#" style="color:#565656;font-weight: normal;font-size: 14px;" class="font-prompt">iPhone 7 (ไอโฟน 7) และ iPhone 7 Plus สรุปสเปก ราคา iPhone 7...</a></div>
+                                        	<div  class="font-prompt container" style="border-bottom: 1px solid #eaeaea;padding-bottom: 5px;width: 100%;padding: 0px;margin-top: 5px;">
+                                        		<span style="font-size: 8px;font-weight: normal;float: left;">Aug 30,2016 05:07 AM EDT</span>
+                                        		<span style="color: #0da5d7;font-size:15px;float: right;">23.4K Share</span>
+                                        	</div>
+                                       </td>
+                                    </tr>
+                                    <tr>
+                                        <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+                                        <td style="padding-top: 7px;padding-bottom: 7px;">
+                                        	<div><a href="#" style="color:#565656;font-weight: normal;font-size: 14px;" class="font-prompt">iPhone 7 (ไอโฟน 7) และ iPhone 7 Plus สรุปสเปก ราคา iPhone 7...</a></div>
+                                        	<div  class="font-prompt container" style="border-bottom: 1px solid #eaeaea;padding-bottom: 5px;width: 100%;padding: 0px;margin-top: 5px;">
+                                        		<span style="font-size: 8px;font-weight: normal;float: left;">Aug 30,2016 05:07 AM EDT</span>
+                                        		<span style="color: #0da5d7;font-size:15px;float: right;">23.4K Share</span>
+                                        	</div>
+                                       </td>
+                                    </tr> 
+                                    <tr>
+                                        <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+                                        <td style="padding-top: 7px;padding-bottom: 7px;">
+                                        	<div><a href="#" style="color:#565656;font-weight: normal;font-size: 14px;" class="font-prompt">iPhone 7 (ไอโฟน 7) และ iPhone 7 Plus สรุปสเปก ราคา iPhone 7...</a></div>
+                                        	<div  class="font-prompt container" style="padding-bottom: 5px;width: 100%;padding: 0px;margin-top: 5px;">
+                                        		<span style="font-size: 8px;font-weight: normal;float: left;">Aug 30,2016 05:07 AM EDT</span>
+                                        		<span style="color: #0da5d7;font-size:15px;float: right;">23.4K Share</span>
+                                        	</div>
+                                       </td>
+                                    </tr> 
+                                                                        
+                                </tbody>
+                            </table>  
+	               		</div>
+
 	               	</div>
 				</div><!--=================== End New iPhone 7 =========================-->
 
@@ -532,9 +555,12 @@
                            
                         </div><!--============= End Spec iPhone 7/7plus =================-->
 
+						<!--================== Start Right Scroll Fix ===================-->
+                        <div class="container" style="width: 100%;padding: 0px;width: 300px;" id="right_scroll_fix">
+
                         <!--=========== Banner 300 ============-->
-                        <div class="container" style="width:100%;max-width:300px;margin:auto;padding:0px;margin-top: 20px;>
-                            <img src="img/pic/banner300.png" alt="" >
+                        <div class="container" style="width:100%;max-width:300px;margin:auto;padding:0px;margin-top:20px;">
+                            <img src="img/pic/banner300.png" alt="" class="img-responsive">
                         </div><!--=========== End Banner 300 ============-->
 
 						<!--=========== Price iPhone 7/7plus ============-->
@@ -596,6 +622,11 @@
                             </div>
                            
                         </div><!--============= End Price iPhone 7/7plus =================-->
+
+						<!--=========== Banner 300 ============-->
+                        <div class="container" style="width:100%;max-width:300px;margin:auto;padding:0px;margin-top:20px;">
+                            <img src="img/pic/banner300.png" alt="" class="img-responsive">
+                        </div><!--=========== End Banner 300 ============-->
 
 
                         <!--=========== Article iPhone7/7plus ============-->
@@ -677,8 +708,10 @@
                            
                         </div><!--============= End Article iPhone7/7plus =================-->
 
+                        </div><!--================== End Right Scroll Fix ====================-->
+
                         <!--=========== Article SmartPhone ============-->
-                        <div class="container" style="width:100%;max-width:300px;margin-top:20px;padding:0px;">
+                        <!--div class="container" style="width:100%;max-width:300px;margin-top:20px;padding:0px;">
                            
                             <div style="border:1px solid #cdcdcd;">
                                 <div style="padding-top:10px;">
@@ -754,7 +787,7 @@
                                 </div>
                             </div>
                            
-                        </div><!--============= End Article SmartPhone =================-->
+                        </div--><!--============= End Article SmartPhone =================-->
 
 
                     </div>
@@ -766,7 +799,7 @@
             
             <!--================= Banner Right ===============-->
             <div style="float:right;width:120px;" class="hidden-xs hidden-sm hidden-md">
-                <img src="img/pic/banner_left.png" alt="">
+                <!--img src="img/pic/banner_left.png" alt=""-->
             </div><!--================= End Banner Right ===============-->
             
         </div>
