@@ -38,139 +38,141 @@
     	background-color: #f6f6f6;
     }
 
-	</style>
+	.li-spec-iphone-active{
+		background-color: #474646;
+		width: 50%;
+		padding-left: 0px;
+		height: 32px;
+	}
+	.li-spec-iphone-active>a{
+		color:#ffffff !important;
+	}
+
+	.li-spec-iphone-active>a>div{
+		background-image: url('img/icon/icon_phone_black.png');
+		background-repeat: no-repeat;
+		width: 17px;
+		height: 26px;
+	}
+
+	.li-spec-iphone{
+		background-color: #ffffff;
+		width: 50%;
+		padding-left: 0px;
+		height: 32px;
+		border-bottom: 2px solid #474646;
+	}
+
+	.li-spec-iphone>a{
+		color:#000000 !important;
+	}
+	.li-spec-iphone>a>div{
+		background-image: url('img/icon/icon_phone_white.png');
+		background-repeat: no-repeat;
+		width: 17px;
+		height: 26px;
+	}
+
+	.container-spec{
+		background-image: url('img/background/tab_spec.png');
+	    background-repeat:repeat-y;
+	    width: 100%;
+	    margin-bottom: 1px;
+        padding:0px;
+        background-color: #fbfbfb;
+    }
+
+    .div-spec-detail{
+        float: left;
+		width: 130px;
+		margin-left: 0px;
+		font-size: 12px;
+    }
+
+    .div-spec-text{
+        float: right;
+        font-size: 11px;
+        font-weight: bolder;
+        padding: 0px;
+    }
 
 
-                            <style>
-
-								.li-spec-iphone-active{
-									background-color: #474646;
-									width: 50%;
-									padding-left: 0px;
-									height: 32px;
-								}
-								.li-spec-iphone-active>a{
-									color:#ffffff !important;
-								}
-
-								.li-spec-iphone-active>a>div{
-									background-image: url('img/icon/icon_phone_black.png');
-									background-repeat: no-repeat;
-									width: 17px;
-									height: 26px;
-								}
-
-								.li-spec-iphone{
-									background-color: #ffffff;
-									width: 50%;
-									padding-left: 0px;
-									height: 32px;
-									border-bottom: 2px solid #474646;
-								}
-
-								.li-spec-iphone>a{
-									color:#000000 !important;
-								}
-								.li-spec-iphone>a>div{
-									background-image: url('img/icon/icon_phone_white.png');
-									background-repeat: no-repeat;
-									width: 17px;
-									height: 26px;
-								}
-
-								.container-spec{
-									background-image: url('img/background/tab_spec.png');
-	                            	background-repeat:repeat-y;
-	                            	width: 100%;
-	                            	margin-bottom: 1px;
-                            		padding:0px;
-                            		background-color: #fbfbfb;
-                            	}
-
-                            	.div-spec-detail{
-                            		float: left;
-									width: 130px;
-									margin-left: 0px;
-									font-size: 12px;
-                            	}
-
-                            	.div-spec-text{
-                            		float: right;
-                            		font-size: 11px;
-                            		font-weight: bolder;
-                            		padding: 0px;
-                            	}
-
-
-                            	@media (min-width: 375px) { 
-									.div-spec-text{	                            		
-	                            		font-size: 16px;	
+    @media (min-width: 375px) { 
+		.div-spec-text{	                            		
+	        font-size: 16px;	
 	                            		                 	
-	                            	}
+	    }
 
-	                            	.div-spec-detail{
-	                            		float: left;
-										width: 150px;
-										margin-left: 5px;
-										font-size: 16px;
-                            		}
+	    .div-spec-detail{
+	        float: left;
+			width: 150px;
+			margin-left: 5px;
+			font-size: 16px;
+        }
 
-                            		.li-spec-iphone-active .li-spec-iphone{
-										padding-left: 20px;
-									}
+        .li-spec-iphone-active .li-spec-iphone{
+			padding-left: 20px;
+		}
 
-                            	}
+    }
 
-                            	@media (min-width: 768px) { 
-	                            	.container-spec{
-									    padding-left: 20px;
-									    padding-top: 10px;
-									    padding-bottom: 5px;
-									    padding-right: 5px;
-	                            	}
-	                            	.div-spec-detail{										
-										width: 200px;
-										font-size: 12px;
-										margin-left: 10px;
-	                            	}
-	                            	.div-spec-text{	                            		
-	                            		font-size: 20px;	
-	                            		padding: 0px;                                       		
-	                            	}
+    @media (min-width: 768px) { 
+	    .container-spec{
+			padding-left: 20px;
+			padding-top: 10px;
+			padding-bottom: 5px;
+			padding-right: 5px;
+	    }
+
+	    .div-spec-detail{		    								
+			width: 200px;
+			font-size: 12px;
+			margin-left: 10px;
+	    }
+
+	    .div-spec-text{	                            		
+	        font-size: 20px;	
+	        padding: 0px;                                       		
+	    }
 
 									
-								}
+	}
 
+    </style>
 
+    <script>
 
-                            </style>
+    	$(document).ready(function($) {
 
-                            <script>
+    		$('#li_spec_iphone7').click(function(event) {
+            	var nav_li=$('#li_spec_iphone7').hasClass('active');
+                   			
+	            if(!nav_li){
+	           		$("#li_spec_iphone7").removeClass("li-spec-iphone");
+	                $("#li_spec_iphone7plus").removeClass("li-spec-iphone-active");
 
+	                $("#li_spec_iphone7plus").addClass("li-spec-iphone");
+	                $("#li_spec_iphone7").addClass("li-spec-iphone-active");
+	            }
+        	});
 
-                            	$('#li_spec_iphone7').click(function(event) {
-                            		var nav_li=$('#li_spec_iphone7').hasClass('active');
-                            			
-                            		if(!nav_li){
-                            			$("#li_spec_iphone7").removeClass("li-spec-iphone");
-                            			$("#li_spec_iphone7plus").removeClass("li-spec-iphone-active");
+        	$('#li_spec_iphone7plus').click(function(event) {
+	            var nav_li=$('#li_spec_iphone7plus').hasClass('active');
 
-                            			$("#li_spec_iphone7plus").addClass("li-spec-iphone");
-                            			$("#li_spec_iphone7").addClass("li-spec-iphone-active");
-                            		}
-                            	});
+	            if(!nav_li){
+	                $("#li_spec_iphone7").removeClass("li-spec-iphone-active");
+	                $("#li_spec_iphone7plus").removeClass("li-spec-iphone");
 
-                            	$('#li_spec_iphone7plus').click(function(event) {
-                            		var nav_li=$('#li_spec_iphone7plus').hasClass('active');
+	                $("#li_spec_iphone7plus").addClass("li-spec-iphone-active");
+	                $("#li_spec_iphone7").addClass("li-spec-iphone");
+	            }
+	        });
 
-                            		if(!nav_li){
-                            			$("#li_spec_iphone7").removeClass("li-spec-iphone-active");
-                            			$("#li_spec_iphone7plus").removeClass("li-spec-iphone");
+    	});
 
-                            			$("#li_spec_iphone7plus").addClass("li-spec-iphone-active");
-                            			$("#li_spec_iphone7").addClass("li-spec-iphone");
-                            		}
-                            	});
+      
+
+        
 
     </script>
 
@@ -247,12 +249,13 @@
 
                 <!--===================  Pic iPhone 7=========================-->
                 <div class="container" style="width:100%;padding:0px;margin:0px;">
-					<img src="img/pic/spec_iphone7.png" class="img-responsive" alt="">                
+					<img src="img/pic/spec_iphone7.png" class="img-responsive hidden-xs" alt="">      
+					<img src="img/pic/iphone7_mobile.png" class="img-responsive hidden-sm hidden-md hidden-lg" alt="" style="margin:auto;">                
                 </div><!--===================  =========================-->
 				
                 <!--===================  New iPhone 7 =========================-->
 				<div class="container" style="width: 100%;padding: 0px;margin-top: 20px;">
-					<div class="col-md-6">
+					<div class="col-md-6 hidden-xs">
 	               		<div class="container" style="width: 100%;background-color: #474646;padding: 0px;margin: 0px;">
 	               			<img src="img/tab_menu/iphone7_news.png" class="img-responsive" alt="">
 	               		</div>
@@ -392,34 +395,331 @@
                     </div>
                      <!--============= Content Right =================-->
                     <div class="col-md-4 layout_right">
+
+						<!--========================= Last News iPhone 7 Version Mobile =======================-->
+						<div class="container hidden-sm hidden-md hidden-lg" style="width: 100%;padding: 0px;margin-top: 20px;">							
+	               			<div class="container" style="width: 100%;background-color: #474646;padding: 0px;margin: 0px;">
+	               				<img src="img/tab_menu/iphone7_news.png" class="img-responsive" alt="">
+	               			</div>
+	               			<div class="container" style="width: 100%;padding: 0px;padding-left: 5px;background-color: #f6f6f6;margin-bottom: 20px;">
+		               			<table class="table-news" style="max-width: 460px;">
+	                                <tbody>
+	                                	<tr>
+	                                        <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+	                                        <td>
+	                                        	<div><a href="#" style="color:#565656;font-weight: normal;font-size: 14px;" class="font-prompt">iPhone 7 (ไอโฟน 7) และ iPhone 7 Plus สรุปสเปก ราคา iPhone 7 iPhone 7 Plus</a></div>
+	                                        	<div  class="font-prompt container" style="border-bottom: 1px solid #eaeaea;padding-bottom: 5px;width: 100%;padding: 0px;margin-top: 5px;">
+	                                        		<span style="font-size: 8px;font-weight: normal;float: left;">Aug 30,2016 05:07 AM EDT</span>
+	                                        		<span style="color: #0da5d7;font-size:15px;float: right;">23.4K Share</span>
+	                                        	</div>
+	                                       </td>
+	                                    </tr> 
+	                                    <tr>
+	                                        <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+	                                        <td>
+	                                        	<div><a href="#" style="color:#565656;font-weight: normal;font-size: 14px;" class="font-prompt">iPhone 7 (ไอโฟน 7) และ iPhone 7 Plus สรุปสเปก ราคา iPhone 7 iPhone 7 Plus</a></div>
+	                                        	<div  class="font-prompt container" style="border-bottom: 1px solid #eaeaea;padding-bottom: 5px;width: 100%;padding: 0px;margin-top: 5px;">
+	                                        		<span style="font-size: 8px;font-weight: normal;float: left;">Aug 30,2016 05:07 AM EDT</span>
+	                                        		<span style="color: #0da5d7;font-size:15px;float: right;">23.4K Share</span>
+	                                        	</div>
+	                                       </td>
+	                                    </tr>
+	                                    <tr>
+	                                        <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+	                                        <td>
+	                                        	<div><a href="#" style="color:#565656;font-weight: normal;font-size: 14px;" class="font-prompt">iPhone 7 (ไอโฟน 7) และ iPhone 7 Plus สรุปสเปก ราคา iPhone 7 iPhone 7 Plus</a></div>
+	                                        	<div  class="font-prompt container" style="padding-bottom: 5px;width: 100%;padding: 0px;margin-top: 5px;">
+	                                        		<span style="font-size: 8px;font-weight: normal;float: left;">Aug 30,2016 05:07 AM EDT</span>
+	                                        		<span style="color: #0da5d7;font-size:15px;float: right;">23.4K Share</span>
+	                                        	</div>
+	                                       </td>
+	                                    </tr> 
+	                                                                        
+	                                </tbody>
+	                            </table>  
+	               			</div>
+	               		</div><!--=========================End Last News iPhone 7 Version Mobile =======================-->
+
                     	<!--=========== Banner 300 ============-->
                         <div class="container" style="width:100%;max-width:300px;margin:auto;padding:0px;">
+                            <img src="img/pic/banner300.png" alt="" class="img-responsive">
+                        </div><!--=========== End Banner 300 ============-->
+
+                        <!--=========== Spec iPhone 7/7plus ============-->
+                        <div class="container" style="width:100%;max-width:300px;margin-top:20px;padding:0px;">
+                           
+                            <div style="border:1px solid #cdcdcd;">
+                                <div style="padding-top:10px;">
+                                    <img src="img/icon/icon_iphone_blue.png" alt="" style="margin-left:-5px;">
+                                    <img src="img/tab_menu/spec_iphone7.png" alt="">
+                                </div>
+
+                                <div class="container" style="width: 100%;padding-bottom: 20px;">
+                                	<div class="media">
+										<div class="media-left">
+											<a href="#">
+												<img class="media-object" src="img/pic/small_iphone7.png" alt="...">
+											</a>
+										</div>
+										<div class="media-body" style="text-align:left;padding-top: 15px;">
+											<div>
+												<a href="#" style="color: #000000;font-weight: bolder;font-size: 15px;" class="font-prompt">
+													<div>iPhone 7 <span style="font-size: 11px;">(ไอโฟน7)</span></div>
+													<div>รุ่น 32 GB/128</div>
+												</a>
+											</div>
+											<div style="margin-top: 10px;"><a href="#"><img src="img/btn/view_spec_detail.png" alt=""></a></div>
+										</div>
+									</div>
+									
+								</div>
+
+								<div class="container" style="width: 100%;margin-bottom: 20px;background-color: #f7f7f7;">
+									<div class="media">
+										<div class="media-left">
+											<a href="#">
+												<img class="media-object" src="img/pic/small_iphone7plus.png" alt="...">
+											</a>
+										</div>
+										<div class="media-body" style="text-align:left;padding-top: 15px;">
+											<div>
+												<a href="#" style="color: #000000;font-weight: bolder;font-size: 15px;" class="font-prompt">
+													<div>iPhone 7 Plus <span style="font-size: 11px;">(ไอโฟน7 พลัส)</span></div>
+													<div>รุ่น 32 GB/128</div>
+												</a>
+											</div>
+											<div style="margin-top: 10px;"><a href="#"><img src="img/btn/view_spec_detail.png" alt=""></a></div>
+										</div>
+									</div>
+								</div>
+
+                            </div>
+                           
+                        </div><!--============= End Spec iPhone 7/7plus =================-->
+
+                        <!--=========== Banner 300 ============-->
+                        <div class="container" style="width:100%;max-width:300px;margin:auto;padding:0px;margin-top: 20px;>
                             <img src="img/pic/banner300.png" alt="" >
                         </div><!--=========== End Banner 300 ============-->
-                        <!--=========== Banner 300 ============-->
-                        <div class="container" style="width:100%;max-width:300px;margin:auto;padding:0px;">
-                            <img src="img/pic/spec_iphone7_right.png" alt="" >
-                        </div><!--=========== End Banner 300 ============-->
 
-                        <!--=========== Banner 300 ============-->
-                        <div class="container" style="width:100%;max-width:300px;margin:auto;padding:0px;">
-                            <img src="img/pic/banner300.png" alt="" >
-                        </div><!--=========== End Banner 300 ============-->
+						<!--=========== Price iPhone 7/7plus ============-->
+                        <div class="container" style="width:100%;max-width:300px;margin-top:20px;padding:0px;">
+                           
+                            <div style="border:1px solid #cdcdcd;">
+                                <div style="padding-top:10px;margin-bottom: 15px;">
+                                    <img src="img/icon/icon_iphone_green.png" alt="" style="margin-left:-5px;">
+                                    <img src="img/tab_menu/price_iphone7.png" alt="">
+                                </div>
+                                <div class="container" style="width: 100%;padding-bottom: 10px;padding-top: 10px;">
+                                	<table class="font-prompt" style="width: 100%;font-size: 22px;">
+                                		<tr>
+                                			<td style="font-size: 20px;">iPhone 7</td>
+                                			<td style="text-align: right;font-weight: bolder;">32 GB</td>
+                                		</tr>
+                                		<tr>
+                                			<td style="font-size: 20px;">ราคา</td>
+                                			<td style="text-align: right;color:#d40202;font-weight: bolder;">29,000 <span style="color:#000000;">บาท</span></td>
+                                		</tr>
+                                		<tr>                                			
+                                			<td colspan="2" style="text-align: right;font-size: 11px;">Update 31 June 2016</td>
+                                		</tr>
+                                	</table>
+                                </div>
+                                <div class="container" style="width: 100%;padding-bottom: 10px;padding-top: 10px;background-color: #f7f7f7;">
+                                	<table class="font-prompt" style="width: 100%;font-size: 22px;">
+                                		<tr>
+                                			<td style="font-size: 20px;">iPhone 7</td>
+                                			<td style="text-align: right;font-weight: bolder;">128 GB</td>
+                                		</tr>
+                                		<tr>
+                                			<td style="font-size: 20px;">ราคา</td>
+                                			<td style="text-align: right;color:#d40202;font-weight: bolder;">39,000 <span style="color:#000000;">บาท</span></td>
+                                		</tr>
+                                		<tr>                                			
+                                			<td colspan="2" style="text-align: right;font-size: 11px;">Update 31 June 2016</td>
+                                		</tr>
+                                	</table>
+                                </div>
+                                <div class="container" style="width: 100%;padding-bottom: 10px;padding-top: 10px;">
+                                	<table class="font-prompt" style="width: 100%;font-size: 22px;">
+                                		<tr>
+                                			<td style="font-size: 20px;">iPhone 7</td>
+                                			<td style="text-align: right;font-weight: bolder;">256 GB</td>
+                                		</tr>
+                                		<tr>
+                                			<td style="font-size: 20px;">ราคา</td>
+                                			<td style="text-align: right;color:#d40202;font-weight: bolder;">59,000 <span style="color:#000000;">บาท</span></td>
+                                		</tr>
+                                		<tr>                                			
+                                			<td colspan="2" style="text-align: right;font-size: 11px;">Update 31 June 2016</td>
+                                		</tr>
+                                	</table>
+                                </div>
+                                <div class="container" style="width: 100%;background-color: #f1f1f1;text-align: right;padding-bottom: 3px;">
+                                	<a href="#"><img src="img/btn/view_all_data.png" alt=""></a>
+                                </div>
+                            </div>
+                           
+                        </div><!--============= End Price iPhone 7/7plus =================-->
 
-                         <!--=========== Banner 300 ============-->
-                        <div class="container" style="width:100%;max-width:300px;margin:auto;padding:0px;">
-                            <img src="img/pic/price_iphone7.png" alt="" >
-                        </div><!--=========== End Banner 300 ============-->
 
-                        <!--=========== Banner 300 ============-->
-                        <div class="container" style="width:100%;max-width:300px;margin:auto;padding:0px;">
-                            <img src="img/pic/article_iphone7.png" alt="" >
-                        </div><!--=========== End Banner 300 ============-->
+                        <!--=========== Article iPhone7/7plus ============-->
+                        <div class="container" style="width:100%;max-width:300px;margin-top:20px;padding:0px;">
+                           
+                            <div style="border:1px solid #cdcdcd;">
+                                <div style="padding-top:10px;">
+                                    <img src="img/icon/icon_iphone_red.png" alt="" style="margin-left:-5px;">
+                                    <img src="img/tab_menu/article_iphone.png" alt="">
+                                </div>
+                                <div class="container" style="width: 100%;padding-bottom: 10px;padding-top: 10px;padding-left: 10px;padding-right: 5px;">
+                                	<div class="media">
+										<div class="media-left" style="max-width: 100px;">
+											<a href="#">
+												<img class="media-object" src="img/pic/pic93.png" alt="...">
+											</a>
+										</div>
+										<div class="media-body font-prompt" style="text-align:left;padding-top: 5px;line-height: 1.3;">
+											<div>
+												<a href="#" style="color: #000000;font-weight: bolder;font-size: 15px;" >
+													iPhone 7 etes Wite Uber In Rideing on Sha
+												</a>												
+											</div>
+											<div style="font-size: 13px;padding-top: 2px;">
+													กลับมาพบกันอีกครั้งกับมหกรรม 2016 Hi-End รอบนี้แม้จะห่อง
+											</div>
+											<div style="font-size: 8px;">31 June 2016</div>
+										</div>
+									</div>
+									
+								</div>
+								<div class="container" style="width: 100%;padding-bottom: 10px;padding-top: 10px;padding-left: 10px;padding-right: 5px;">
+                                	<div class="media">
+										<div class="media-left" style="max-width: 100px;">
+											<a href="#">
+												<img class="media-object" src="img/pic/pic93.png" alt="...">
+											</a>
+										</div>
+										<div class="media-body font-prompt" style="text-align:left;padding-top: 5px;line-height: 1.3;">
+											<div>
+												<a href="#" style="color: #000000;font-weight: bolder;font-size: 15px;" >
+													iPhone 7 etes Wite Uber In Rideing on Sha
+												</a>												
+											</div>
+											<div style="font-size: 13px;padding-top: 2px;">
+													กลับมาพบกันอีกครั้งกับมหกรรม 2016 Hi-End รอบนี้แม้จะห่อง
+											</div>
+											<div style="font-size: 8px;">31 June 2016</div>
+										</div>
+									</div>
+									
+								</div>
+								<div class="container" style="width: 100%;padding-bottom: 10px;padding-top: 10px;padding-left: 10px;padding-right: 5px;">
+                                	<div class="media">
+										<div class="media-left" style="max-width: 100px;">
+											<a href="#">
+												<img class="media-object" src="img/pic/pic93.png" alt="...">
+											</a>
+										</div>
+										<div class="media-body font-prompt" style="text-align:left;padding-top: 5px;line-height: 1.3;">
+											<div>
+												<a href="#" style="color: #000000;font-weight: bolder;font-size: 15px;" >
+													iPhone 7 etes Wite Uber In Rideing on Sha
+												</a>												
+											</div>
+											<div style="font-size: 13px;padding-top: 2px;">
+													กลับมาพบกันอีกครั้งกับมหกรรม 2016 Hi-End รอบนี้แม้จะห่อง
+											</div>
+											<div style="font-size: 8px;">31 June 2016</div>
+										</div>
+									</div>
+									
+								</div>
 
-                        <!--=========== Banner 300 ============-->
-                        <div class="container" style="width:100%;max-width:300px;margin:auto;padding:0px;">
-                            <img src="img/pic/article_etc.png" alt="" >
-                        </div><!--=========== End Banner 300 ============-->
+								<div class="container" style="width: 100%;background-color: #f1f1f1;text-align: right;padding-bottom: 3px;">
+                                	<a href="#"><img src="img/btn/all_article_iphone.png" alt=""></a>
+                                </div>
+                            </div>
+                           
+                        </div><!--============= End Article iPhone7/7plus =================-->
+
+                        <!--=========== Article SmartPhone ============-->
+                        <div class="container" style="width:100%;max-width:300px;margin-top:20px;padding:0px;">
+                           
+                            <div style="border:1px solid #cdcdcd;">
+                                <div style="padding-top:10px;">
+                                    <img src="img/icon/icon_iphone_pink.png" alt="" style="margin-left:-5px;">
+                                    <img src="img/tab_menu/article_techmoblog_recommend.png" alt="">
+                                </div>
+                               <div class="container" style="width: 100%;padding-bottom: 10px;padding-top: 10px;padding-left: 10px;padding-right: 5px;">
+                                	<div class="media">
+										<div class="media-left" style="max-width: 100px;">
+											<a href="#">
+												<img class="media-object" src="img/pic/pic93.png" alt="...">
+											</a>
+										</div>
+										<div class="media-body font-prompt" style="text-align:left;padding-top: 5px;line-height: 1.3;">
+											<div>
+												<a href="#" style="color: #000000;font-weight: bolder;font-size: 15px;" >
+													iPhone 7 etes Wite Uber In Rideing on Sha
+												</a>												
+											</div>
+											<div style="font-size: 13px;padding-top: 2px;">
+													กลับมาพบกันอีกครั้งกับมหกรรม 2016 Hi-End รอบนี้แม้จะห่อง
+											</div>
+											<div style="font-size: 8px;">31 June 2016</div>
+										</div>
+									</div>
+									
+								</div>
+								<div class="container" style="width: 100%;padding-bottom: 10px;padding-top: 10px;padding-left: 10px;padding-right: 5px;">
+                                	<div class="media">
+										<div class="media-left" style="max-width: 100px;">
+											<a href="#">
+												<img class="media-object" src="img/pic/pic93.png" alt="...">
+											</a>
+										</div>
+										<div class="media-body font-prompt" style="text-align:left;padding-top: 5px;line-height: 1.3;">
+											<div>
+												<a href="#" style="color: #000000;font-weight: bolder;font-size: 15px;" >
+													iPhone 7 etes Wite Uber In Rideing on Sha
+												</a>												
+											</div>
+											<div style="font-size: 13px;padding-top: 2px;">
+													กลับมาพบกันอีกครั้งกับมหกรรม 2016 Hi-End รอบนี้แม้จะห่อง
+											</div>
+											<div style="font-size: 8px;">31 June 2016</div>
+										</div>
+									</div>
+									
+								</div>
+								<div class="container" style="width: 100%;padding-bottom: 10px;padding-top: 10px;padding-left: 10px;padding-right: 5px;">
+                                	<div class="media">
+										<div class="media-left" style="max-width: 100px;">
+											<a href="#">
+												<img class="media-object" src="img/pic/pic93.png" alt="...">
+											</a>
+										</div>
+										<div class="media-body font-prompt" style="text-align:left;padding-top: 5px;line-height: 1.3;">
+											<div>
+												<a href="#" style="color: #000000;font-weight: bolder;font-size: 15px;" >
+													iPhone 7 etes Wite Uber In Rideing on Sha
+												</a>												
+											</div>
+											<div style="font-size: 13px;padding-top: 2px;">
+													กลับมาพบกันอีกครั้งกับมหกรรม 2016 Hi-End รอบนี้แม้จะห่อง
+											</div>
+											<div style="font-size: 8px;">31 June 2016</div>
+										</div>
+									</div>
+									
+								</div>
+
+								<div class="container" style="width: 100%;background-color: #f1f1f1;text-align: right;padding-bottom: 3px;">
+                                	<a href="#"><img src="img/btn/view_all_article.png" alt=""></a>
+                                </div>
+                            </div>
+                           
+                        </div><!--============= End Article SmartPhone =================-->
 
 
                     </div>
@@ -488,7 +788,7 @@
             </table>
         </div>
 
-        <div class="tab-footer hidden-xs" style="background-color:#1e1e1e;">
+        <div class="tab-footer hidden-xs" style="background-color:#1e1e1e;color:#FFFFFF;">
             <table style="width: 100%;max-width: 1200px;margin: auto;">
                 <tr>
                     <td style="width: 50%">
@@ -501,7 +801,7 @@
             </table>
         </div>
 
-        <div class="container tab-footer hidden-md hidden-sm hidden-lg" style="text-align:center;background-color:#1e1e1e;">
+        <div class="container tab-footer hidden-md hidden-sm hidden-lg" style="text-align:center;background-color:#1e1e1e;color:#FFFFFF;">
           <div class="row" style="width:100%;">
             <div class="col-md-8">
               © Copyright 2009 Techmoblog.com All rights reserved. Contact us | Term of services
